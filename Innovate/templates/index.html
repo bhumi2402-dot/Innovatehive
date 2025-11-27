@@ -1,0 +1,898 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>InnovateHive</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="{% static 'assets/img/innovatelogo.png' %}" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <h1 class="sitename">InnovateHive</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="{% url 'home' %}">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Our Projects</a></li>
+          <li><a href="#blogs">Blogs</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+
+          
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="index.html#about">Get Started</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+      <div class="container" data-aos="fade-up">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="hero-content" data-aos="fade-up" data-aos-delay="100">
+              <div class="hero-tag">
+                <i class="bi bi-rocket-takeoff"></i>
+                
+              </div>
+              <h1>Empowering <span class="highlight"> Intelligent</span> Digital <span class="highlight"> Growth</span></h1>
+               <p class="lead">At InnovateHive, we turn your ideas into scalable digital products powered by AI, design, and smart technology.</p>
+              <div class="hero-cta">
+                <a href="#services" class="btn btn-primary">Explore Our Services</a>
+                <a href="+91 8767555945" class="btn btn-link"><i class="bi bi-telephone"></i> +91 8767555945</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="hero-image-wrapper" data-aos="fade-up" data-aos-delay="300">
+              <img src="{% static 'assets/img/about/about-square-13.webp' %}" alt="" class="img-fluid hero-image">
+              <div class="stat-card top-right">
+                <div class="stat-value">55%</div>
+                <div class="stat-label">Improved market presence</div>
+                <div class="stat-icon">
+                  <i class="bi bi-graph-up-arrow"></i>
+                </div>
+              </div>
+              <div class="stat-card bottom-left">
+                <div class="stat-value">+250</div>
+                <div class="stat-label">Increased lead generation</div>
+                <div class="stat-icon">
+                  <i class="bi bi-graph-up"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row justify-content-center mb-5">
+          <div class="col-lg-8 text-center" data-aos="fade-up" data-aos-delay="200">
+            <h2 class="section-heading">Our Vision &amp; Mission</h2>
+            <p class="lead">To be a global leader in intelligent digital innovation, empowering businesses with AI-driven, creative, and future-ready solutions that inspire sustainable growth and success.</p>
+          </div>
+        </div>
+
+        <div class="row g-4 mb-5">
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="feature-box">
+              <div class="icon-container">
+                <i class="bi bi-lightbulb"></i>
+              </div>
+              <h4>Innovation</h4>
+              <p>We embrace creativity and emerging technologies to build future-ready digital solutions.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+            <div class="feature-box">
+              <div class="icon-container">
+                <i class="bi bi-graph-up-arrow"></i>
+              </div>
+              <h4>Growth</h4>
+              <p>We focus on delivering measurable outcomes that help businesses scale and evolve intelligently.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+            <div class="feature-box">
+              <div class="icon-container">
+                <i class="bi bi-shield-check"></i>
+              </div>
+              <h4>Integrity</h4>
+              <p>We operate with honesty, transparency, and accountability in every interaction and project.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+            <div class="feature-box">
+              <div class="icon-container">
+                <i class="bi bi-people-fill"></i>
+              </div>
+              <h4>Collaboration</h4>
+              <p>We believe in working closely with clients, partners, and teams to achieve impactful results.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row align-items-center about-showcase">
+          <div class="col-lg-6 order-lg-2" data-aos="fade-left" data-aos-delay="300">
+            <div class="about-image-grid">
+              <img src="{% static 'assets/img/about/about-15.webp' %}" class="img-grid-main" alt="Our company vision">
+              <img src="{% static 'assets/img/about/about-17.webp' %}" class="img-grid-secondary" alt="Our team">
+              <img src="{% static 'assets/img/about/about-square-5.webp' %}" class="img-grid-tertiary" alt="Our workspace">
+              <div class="experience-badge" data-aos="zoom-in" data-aos-delay="500">
+                <!-- <span class="years">15+</span>
+                <span class="text">Years of Excellence</span> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1" data-aos="fade-right" data-aos-delay="200">
+            <div class="about-content-box">
+              <h3>Our Mission</h3>
+              <p class="mb-4">To transform ideas into impactful digital products that deliver measurable results.</p>
+              <p class="mb-4">To empower startups, brands, and enterprises with smart, scalable, and innovative solutions.</p>
+              <p class="mb-4">To integrate AI, creativity, and technology in a way that simplifies complex challenges.</p>
+              <p class="mb-4">To build sustainable digital ecosystems that help businesses grow smarter, faster, and stronger.</p>
+
+  
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats section light-background">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6 col-md-12">
+            <div class="stats-overview text-center text-lg-start" data-aos="fade-right" data-aos-delay="200">
+              <h3>Our growth in numbers</h3>
+          
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-12">
+  <div class="stats-grid" data-aos="zoom-in" data-aos-delay="300">
+
+    <!-- Happy Clients -->
+    <div class="stats-card">
+      <div class="stats-icon">
+        <i class="bi bi-people-fill"></i>
+      </div>
+      <div class="stats-content">
+        <div class="stats-number">
+          <span 
+            data-purecounter-start="0" 
+            data-purecounter-end="50" 
+            data-purecounter-duration="1" 
+            class="purecounter">
+          </span><span class="plus">+</span>
+        </div>
+        <p>Happy Clients</p>
+      </div>
+    </div>
+
+    <!-- Completed Projects -->
+    <div class="stats-card">
+      <div class="stats-icon">
+        <i class="bi bi-folder2-open"></i>
+      </div>
+      <div class="stats-content">
+        <div class="stats-number">
+          <span 
+            data-purecounter-start="0" 
+            data-purecounter-end="70" 
+            data-purecounter-duration="1" 
+            class="purecounter">
+          </span><span class="plus">+</span>
+        </div>
+        <p>Completed Projects</p>
+      </div>
+    </div>
+
+    <!-- Support Hours -->
+    <div class="stats-card">
+      <div class="stats-icon">
+        <i class="bi bi-headset"></i>
+      </div>
+      <div class="stats-content">
+        <div class="stats-number">
+          <span 
+            data-purecounter-start="0" 
+            data-purecounter-end="1453" 
+            data-purecounter-duration="1" 
+            class="purecounter">
+          </span><span class="plus">+</span>
+        </div>
+        <p>Support Hours</p>
+      </div>
+    </div>
+
+    <!-- Client Satisfaction -->
+    <div class="stats-card">
+      <div class="stats-icon">
+        <i class="bi bi-person-workspace"></i>
+      </div>
+      <div class="stats-content">
+        <div class="stats-number">
+          <span 
+            data-purecounter-start="0" 
+            data-purecounter-end="95" 
+            data-purecounter-duration="1" 
+            class="purecounter">
+          </span><span class="plus">%</span>
+        </div>
+        <p>Client Satisfaction</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+    </section><!-- /Stats Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+       
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="services-row">
+          <div class="row">
+           
+          
+
+            <div class="col-lg-12">
+              <div class="services-grid">
+                <div class="row gy-4">
+                  <!-- Service Item 1 -->
+                  <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card">
+                      <div class="service-content text-center">
+                        <div class="service-icon">
+                          <i class="bi bi-cash-stack"></i>
+                        </div>
+                        <div class="service-info">
+                          <h3><a href="#">Web Design & Development</a></h3>
+                          <p>Custom, responsive, and high-performance websites for startups and businesses.</p>
+                          <div class="service-action">
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Service Item 2 -->
+                  <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card">
+                      <div class="service-content text-center">
+                        <div class="service-icon">
+                          <i class="bi bi-list-check"></i>
+                        </div>
+                        <div class="service-info">
+                          <h3><a href="#">UI/UX Design</a></h3>
+                          <p>Creative, modern, and user-focused design that enhances engagement.</p>
+                          <div class="service-action">
+                          
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                   <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card">
+                      <div class="service-content text-center">
+                        <div class="service-icon">
+                          <i class="bi bi-cash-stack"></i>
+                        </div>
+                        <div class="service-info">
+                          <h3><a href="#">Mobile App Development</a></h3>
+                          <p>Android, iOS, and cross-platform apps with seamless user experience.</p>
+                          <div class="service-action">
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Service Item 3 -->
+                  <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card">
+                      <div class="service-content text-center">
+                        <div class="service-icon">
+                          <i class="bi bi-bar-chart"></i>
+                        </div>
+                        <div class="service-info">
+                          <h3><a href="#">Digital Marketing & Growth Strategy</a></h3>
+                          <p>SEO, social media marketing, content marketing, and performance-based growth.</p>
+                          <div class="service-action">
+                           
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Service Item 4 -->
+                  <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-card">
+                      <div class="service-content text-center">
+                        <div class="service-icon">
+                          <i class="bi bi-pie-chart"></i>
+                        </div>
+                        <div class="service-info">
+                          <h3><a href="#">AI-Driven Digital Solutions</a></h3>
+                          <p>Smart, scalable solutions powered by Artificial Intelligence and automation.</p>
+                          <div class="service-action">
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+
+    <!-- Projects Section -->
+     <section id="projects" class="projects section">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Our Projects</h2>
+     </div>
+        <section id="projects" class="projects section">
+  
+       <div class="row g-4 justify-content-center">
+
+    <!-- Project 1 -->
+    <div class="col-6 col-md-3">
+      <div class="project-box text-center">
+        <a href="https://drprajaktakadamnaigude.com/" target="_blank">
+          <img src="{% static 'assets/img/projects/Pediatric_Project.png' %}" class="project-img-small" alt="">
+          <h5 class="mt-2">Dr. Naigude Website</h5>
+        </a>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="col-6 col-md-3">
+      <div class="project-box text-center">
+        <a href="https://scubadivingintarkarli.in/" target="_blank">
+          <img src="{% static 'assets/img/projects/Scuba_Project.png' %}" class="project-img-small" alt="">
+          <h5 class="mt-2">Tarkarli Scuba Diving</h5>
+        </a>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="col-6 col-md-3">
+      <div class="project-box text-center">
+        <a href="https://suryaaclinic.com/" target="_blank">
+          <img src="{% static 'assets/img/projects/suryaclicnic.png' %}" class="project-img-small" alt="">
+          <h5 class="mt-2">Surya Clinic</h5>
+        </a>
+      </div>
+    </div>
+
+    <!-- Project 4 -->
+    <div class="col-6 col-md-3">
+      <div class="project-box text-center">
+        <a href="https://bhaum.in/" target="_blank">
+          <img src="{% static 'assets/img/projects/Bhaum_Project.png' %}" class="project-img-small" alt="">
+          <h5 class="mt-2">Bhaum</h5>
+        </a>
+      </div>
+    </div>
+
+     <!-- Project 4 -->
+    <div class="col-6 col-md-3">
+      <div class="project-box text-center">
+        <a href="https://drkailasnaraleayurved.com/" target="_blank">
+          <img src="{% static 'assets/img/projects/Ayurvedic_Project.png' %}" class="project-img-small" alt="">
+          <h5 class="mt-2">Dr. Narale Ayurved</h5>
+        </a>
+      </div>
+    </div>
+
+     <!-- Project 4 -->
+    <div class="col-6 col-md-3">
+      <div class="project-box text-center">
+        <a href="https://esaptarshee.in/" target="_blank">
+          <img src="{% static 'assets/img/projects/Esaptarshee_Project.png' %}" class="project-img-small" alt="">
+          <h5 class="mt-2">Esaptarshee</h5>
+        </a>
+      </div>
+    </div>
+
+     <!-- Project 4 -->
+    <div class="col-6 col-md-3">
+      <div class="project-box text-center">
+        <a href="https://kraas.co.in/" target="_blank">
+          <img src="{% static 'assets/img/projects/Kraas_Project.png' %}" class="project-img-small" alt="">
+          <h5 class="mt-2">Kraas</h5>
+        </a>
+      </div>
+    </div>
+
+     <!-- Project 4 -->
+    <div class="col-6 col-md-3">
+      <div class="project-box text-center">
+        <a href="https://www.khavanekayaks.com/" target="_blank">
+          <img src="{% static 'assets/img/projects/Kayaking_Project.png' %}" class="project-img-small" alt="">
+          <h5 class="mt-2">Khavane Kayaks</h5>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+ <section id="blogs" class="blogs section">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Blogs</h2>
+
+<section id="Blogs" class="Blogs section">
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="row g-4 justify-content-center">
+
+      <!-- Blog 1 -->
+      <div class="col-12 col-md-4">
+        <div class="project-box text-center">
+          <img src="{% static 'assets/img/blogs/B-7.jpg' %}" class="img-fluid" alt="Blog Image">
+          <h4 class="mt-2">Data Analysis — Powering Modern Industries</h4>
+          <p><strong>Published by Dhanashri Rawool</strong></p>
+          <p>
+            Data analysis drives smart decisions and helps industries grow efficiently.
+          </p>
+        </div>
+      </div>
+
+      <!-- Blog 2 -->
+      <div class="col-12 col-md-4">
+        <div class="project-box text-center">
+          <img src="{% static 'assets/img/blogs/b10.jpeg' %}" class="img-fluid" alt="Blog Image">
+          <h4 class="mt-2">Unlocking the Power of Visual Storytelling</h4>
+          <p><strong>Published by Omprasad Gawas</strong></p>
+          <p>
+            Visual content creates strong emotional connections and clearer communication.
+          </p>
+        </div>
+      </div>
+
+      <!-- Blog 3 -->
+      <div class="col-12 col-md-4">
+        <div class="project-box text-center">
+          <img src="{% static 'assets/img/blogs/b8.jpeg' %}" class="img-fluid" alt="Blog Image">
+          <h4 class="mt-2">AI is Transforming Everyday Life</h4>
+          <p><strong>Published by InnovateHive Team</strong></p>
+          <p>
+            Artificial Intelligence is reshaping industries with automation, insights, and smarter tools.
+          </p>
+        </div>
+      </div>
+
+       <div class="col-12 col-md-4">
+        <div class="project-box text-center">
+          <img src="{% static 'assets/img/blogs/B-12.jpg' %}" class="img-fluid" alt="Blog Image">
+          <h4 class="mt-2">Why UI/UX Design is the Backbone of Digital Success</h4>
+          <p><strong>Published by Anuja D Sawant</strong></p>
+          <p>
+            UI/UX design shapes how users feel, behave, and interact with a brand. A good design makes apps and websites easy, attractive, and engaging.
+          </p>
+        </div>
+      </div>
+       <div class="col-12 col-md-4">
+        <div class="project-box text-center">
+          <img src="{% static 'assets/img/blogs/b14.jpeg' %}" class="img-fluid" alt="Blog Image">
+          <h4 class="mt-2">The Rise of AI in Cybersecurity: Boon or Bane?</h4>
+          <p><strong>Published by Sharv Sankpal</strong></p>
+          <p>
+            AI makes cybersecurity smarter by detecting unusual patterns and blocking threats in real time. But the same AI can also create highly convincing phishing attacks, increasing potential risks.
+          </p>
+        </div>
+      </div>
+
+       <div class="col-12 col-md-4">
+        <div class="project-box text-center">
+          <img src="{% static 'assets/img/blogs/b13.png' %}" class="img-fluid" alt="Blog Image">
+          <h4 class="mt-2">How AI is Transforming Digital Marketing</h4>
+          <p><strong>Published by Siddhi Shewale</strong></p>
+          <p>
+             From customer insights to content creation, AI is making marketing smarter, faster, and more effective. Let's dive into how AI is transforming the digital marketing landscape.
+        </div>
+      </div>
+
+   
+</section>
+          
+       <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>What our Client says</h2>
+        <!-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p> -->
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-4">
+          <!-- Testimonial Item 1 -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="testimonial-item">
+              <div class="stars">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <p>"I’m Dr. Rohan Vishwasrao, and I truly appreciate the outstanding work by the InnovateHive team. They delivered a fully customizable website that met all my expectations, just as promised. From adding the right features to implementing SEO and continuously taking my feedback, they ensured everything was perfect. Their dedication and support throughout the process were exceptional. The team doesn’t stop until the best is achieved. Thank you, InnovateHive, for your incredible support!"</p>
+              <div class="testimonial-footer">
+                <div class="testimonial-author">
+                  
+                  <div>
+                    <h5>Rohan Vishvasrao</h5>
+                  
+                  </div>
+                </div>
+                <div class="quote-icon">
+                  <i class="bi bi-quote"></i>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Testimonial Item -->
+
+          <!-- Testimonial Item 2 -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="testimonial-item">
+              <div class="stars">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <p>"I am Dr. Kailash Maruti Narale, Founder of Shree Vishwanivas Ayurveda and Panchakarma Kendra. My heartfelt thanks to the InnovateHive team for creating our clinic’s logo and website. They have beautifully showcased the blend of tradition and modernity of our Ayurvedic services. The website is attractive, easy to use and does justice to the principles of our clinic. The entire process was very professional and easy. Heartfelt thanks to InnovateHive!"</p>
+              <div class="testimonial-footer">
+                <div class="testimonial-author">
+                 
+                  <div>
+                    <h5>Kailash Narale</h5>
+                    
+                  </div>
+                </div>
+                <div class="quote-icon">
+                  <i class="bi bi-quote"></i>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Testimonial Item -->
+
+          <!-- Testimonial Item 3 -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="testimonial-item">
+              <div class="stars">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <p>"I’m Rohan Parab, owner of Khavane Kayak, and I’m truly grateful to InnovateHive for their incredible support in bringing my business online. Their hardworking and dedicated team helped me list my business on Google and delivered a customized website exactly as I envisioned. Every request and detail was handled with care and professionalism. Their timely support and guidance made the entire process smooth and stress-free. Thank you, InnovateHive, for helping my business grow!"</p>
+              <div class="testimonial-footer">
+                <div class="testimonial-author">
+                  
+                  <div>
+                    <h5>Rohan Parab</h5>
+                   
+                  </div>
+                </div>
+                <div class="quote-icon">
+                  <i class="bi bi-quote"></i>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Testimonial Item -->
+
+          <!-- Testimonial Item 4 -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="testimonial-item">
+              <div class="stars">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <p>"I’m Rohan Acharekar, proud owner of Blue Adventures, and I want to extend my heartfelt thanks to InnovateHive for developing our incredible scuba diving website. Their highly creative and dedicated team truly understood our brand vision and transformed it into a stunning digital experience. Every detail, from design to functionality, was handled with precision and professionalism. The entire process was smooth, transparent, and efficient. I truly appreciate their support in helping our business grow and connect with more adventure lovers online."</p>
+              <div class="testimonial-footer">
+                <div class="testimonial-author">
+                  
+                  <div>
+                    <h5>Rohan Acharekar</h5>
+                    
+                  </div>
+                </div>
+                <div class="quote-icon">
+                  <i class="bi bi-quote"></i>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Testimonial Item -->
+
+          <!-- Testimonial Item 5 -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="testimonial-item">
+              <div class="stars">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <p>"I’m Dr. Prajakta Kadam Naigude, and I wholeheartedly thank InnovateHive for crafting my medical website. Their talented, attentive team captured the essence of my practice beautifully—clean design, smooth navigation, and professional appeal. From concept to launch, they kept the process transparent and stress-free. The result feels both trustworthy and welcoming—exactly what I envisioned for connecting with patients. I deeply appreciate their expertise and the positive energy they brought to this project."</p>
+              <div class="testimonial-footer">
+                <div class="testimonial-author">
+                 
+                  <div>
+                    <h5>Dr. Prajakta Kadam Naigude</h5>
+                    
+                  </div>
+                </div>
+                <div class="quote-icon">
+                  <i class="bi bi-quote"></i>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Testimonial Item -->
+
+          <!-- Testimonial Item 6 -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="testimonial-item">
+              <div class="stars">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <p>"I am Dr. Shrikant Naigude, and I am deeply grateful to InnovateHive for developing my website.Their team demonstrated exceptional professionalism and creativity in translating my vision into a user-friendly, informative platform. The website effectively showcases my expertise in interventional cardiology and provides patients with easy access to essential information and appointment scheduling. InnovateHive's commitment to quality and attention to detail have significantly enhanced my online presence and patient engagement."</p>
+              <div class="testimonial-footer">
+                <div class="testimonial-author">
+                 
+                    <h5>Dr. Shrikant Naigude</h5>
+                  
+                  </div>
+                </div>
+                <div class="quote-icon">
+                  <i class="bi bi-quote"></i>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Testimonial Item -->
+
+      
+
+    <!-- Contact Section -->
+
+  <section id="contact" class="contact section">
+
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Contact</h2>
+  </div>
+
+  <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+    <div class="row align-items-start"> 
+      
+      <div class="contact-content">
+
+        <!-- Contact Cards -->
+        <div class="contact-cards-container" data-aos="fade-up" data-aos-delay="300">
+          <div class="contact-card">
+            <div class="icon-box"><i class="bi bi-envelope"></i></div>
+            <div class="contact-text">
+              <h4>Email</h4>
+              <p>innovatehive7@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="icon-box"><i class="bi bi-telephone"></i></div>
+            <div class="contact-text">
+              <h4>Call</h4>
+              <p>+91 8767555945</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-container mt-4" data-aos="fade-up" data-aos-delay="400">
+          <h3>Get in Touch</h3>
+
+          <form method="post" action="" class="php-email-form">
+            {% csrf_token %}
+
+            <div class="row">
+              <div class="col-md-6 form-group">
+                <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+              </div>
+              <div class="col-md-6 form-group mt-3 mt-md-0">
+                <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+              </div>
+            </div>
+
+            <div class="form-group mt-3">
+              <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+            </div>
+
+            <div class="form-group mt-3">
+              <textarea name="message" class="form-control" rows="5" placeholder="Message" required></textarea>
+            </div>
+
+            {% if success %}
+            <div id="success-message" class="alert alert-success mt-3">
+              Message Sent Successfully!
+            </div>
+            <script>
+              setTimeout(() => {
+                document.getElementById("success-message").style.display = "none";
+              }, 3000);
+            </script>
+            {% endif %}
+
+            <div class="form-submit">
+              <button type="submit">Send Message</button>
+              <div class="social-links">
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">InnovateHive</span>
+          </a>
+          
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+              <li><a href="#hero">Home</a></li>
+              <li><a href="#about">About us</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#blogs">Blogs</a></li>
+              <li><a href="#contact">Enquiry</a></li>
+              </ul>
+              </div>
+
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#">App Development</a></li>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">AI-Driven digital solutions</a></li>
+            <li><a href="#">UI/UX design</a></li>
+            <li><a href="#">Digital Marketing & Growth Strategy</a></li>
+          </ul>
+        </div>
+
+    
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">InnovateHive</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+    
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+
+  <!-- Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>
