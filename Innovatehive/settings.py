@@ -25,7 +25,22 @@ SECRET_KEY = 'django-insecure-+tb3og(*(xjy3k&2)j5ys$+=3ld*!svbe+w^0bg@wc@65@a4o8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['vercel.app']
+
+
+DEBUG = False  # For deployment
+
+ALLOWED_HOSTS = [
+    'localhost',
+    '127.0.0.1',
+    'innovatehive.onrender.com',  # ← Render URL (add after deployment)
+]
+
+
+
+
+
+
 
 
 # Application definition
@@ -48,6 +63,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
+
 ]
 
 ROOT_URLCONF = 'Innovatehive.urls'
@@ -137,7 +154,5 @@ STATICFILES_DIRS = [
 ]
 STATIC_ROOT = BASE_DIR / "staticfiles"
 
-ALLOWED_HOSTS = ['.vercel.app', 'localhost']
 
-STATIC_URL = '/static/'
-STATIC_ROOT = BASE_DIR / 'staticfiles'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
