@@ -5,7 +5,6 @@ InnovateHive is a modern and responsive portfolio-style website designed for sho
 ## 🌐 Live Demo
 🔗 Hosted URL: [https://your-deployed-website-url.com  ](https://vercel.com/bhumika-shahs-projects/innovatehive-hhk3)
 
----
 
 ## 📌 Features
 
