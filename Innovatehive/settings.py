@@ -23,24 +23,16 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-+tb3og(*(xjy3k&2)j5ys$+=3ld*!svbe+w^0bg@wc@65@a4o8'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
-ALLOWED_HOSTS = ['vercel.app']
 
 
-DEBUG = False  # For deployment
+WSGI_APPLICATION = '<Innovatehive>.wsgi.app'
+DEBUG = False  
 
 ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
-    'innovatehive.onrender.com',  # ← Render URL (add after deployment)
+    '.vercel.app',   # Required for Vercel deployment
 ]
-
-
-
-
-
-
 
 
 # Application definition
@@ -57,6 +49,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware', 
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -66,6 +59,8 @@ MIDDLEWARE = [
 
 
 ]
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 ROOT_URLCONF = 'Innovatehive.urls'
 
