@@ -1,15 +1,19 @@
 {
+  "version": 2,
   "builds": [
     {
-      "src": "innovatehive/wsgi.py",
+      "src": "Innovatehive/wsgi.py",
       "use": "@vercel/python"
     }
   ],
   "routes": [
     {
+      "src": "/static/(.*)",
+      "dest": "/static/$1"
+    },
+    {
       "src": "/(.*)",
-      "dest": "innovatehive/wsgi.py"
+      "dest": "Innovatehive/wsgi.py"
     }
   ]
 }
-
